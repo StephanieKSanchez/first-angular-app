@@ -9,7 +9,9 @@ import { Todo } from 'src/app/models/Todo';
 export class TodosComponent implements OnInit {
   todos: Todo[];
 
-  constructor() {}
+  constructor() {
+    this.todos = [];
+  }
 
   ngOnInit(): void {
     //use 'this' to get variables from inside classes
