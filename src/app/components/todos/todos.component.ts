@@ -11,5 +11,17 @@ export class TodosComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    //use 'this' to get variables from inside classes
+    this.todos = [
+      {
+        content: 'First to do',
+        completed: false,
+      },
+      {
+        content: 'Second to do',
+        completed: true,
+      },
+    ];
+  }
 }
