@@ -7,6 +7,7 @@
       class="todo-input"
       [(ngModel)]="inputTodo"
     />
+    <input type="submit" value="Add Todo" class="todo-submit" />
   </form>
   <div
     *ngFor="let todo of todos; let i = index"
